@@ -1,3 +1,6 @@
+ const batches = require('./example');
+ console.log(batches)
+ 
  let v ='   '
  //array
  //array.at :lấy một giá trị số nguyên và trả về mục tại chỉ mục đó, 
@@ -57,3 +60,4 @@ function logger(...params) {
 console.log(params);
 };
 console.log(logger(1,2,3,4,5));
+

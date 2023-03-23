@@ -1,4 +1,4 @@
-let batches = [
+ export let batches = [
     {
       expirationDate : "2022-01-30T17:00:00.000Z",
       array:[ 
