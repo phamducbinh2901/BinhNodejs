@@ -38,30 +38,22 @@ const ketqua =words.filter(k=>k.length >6);
 console.log(ketqua);
 
 const gt =[2,4,1,7,8,9];
-gt.forEach(element => console.log(element));
+//gt.forEach(element => console.log(element));
 
-console.log(Array.from([1,2,4],x=x+x))
+//console.log(Array.from([1,2,4],x=x+x));
+console.log(gt.includes(4));
 
-let batches = [
-    {
-      expirationDate:"2022-01-30T17:00:00.000Z",
-      key:1
-    },
-    {
-      expirationDate :'2021-03-22T09:29:46.436Z',
-      key:2
-    },  
-    {
-      expirationDate:"2022-03-30T17:00:00.000Z",
-      key:3
-    },
-  ]
-  const minDate = new Date(
-    Math.min(
-      ...batches.map(element => {
-        return new Date(element.expirationDate);
-      }),
-    ),
-  );
-  var d=minDate.getDate();
-  console.log(d);
+var arrr = ['3','5','4'];
+var [a,b,...rest] = arrr;
+console.log(rest);
+var  course={
+    name:'data',
+    price:10000,
+    image:'hihanh'
+};
+var{name,...newObject} = course;
+console.log(newObject);
+function logger(...params) {
+console.log(params);
+};
+console.log(logger(1,2,3,4,5));
